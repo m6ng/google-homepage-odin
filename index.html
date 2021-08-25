@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Odin's Google Homepage</title>
+    <link rel="stylesheet" href="css/form.css">
+    <!--stylesheet link for using Google's material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        .header {
+            background-color: lightgreen;
+            position: fixed;
+            top: 0;
+        }
+
+        .header-left {
+            text-align: left;
+        }
+        
+        .header-right {
+            text-align: right;
+        }
+
+        .main-body-search-form {
+            text-align: center;
+        }
+
+        .footer {
+            background-color: lightgrey;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="https://www.theodinproject.com/">About</a>
+            <a href="https://www.theodinproject.com/">Store</a>
+        </div>
+        <div class="header-right">
+            <a href="https://www.theodinproject.com/">Gmail</a>
+            <a href="https://www.theodinproject.com/">Images</a>
+            <span class="material-icons">apps</span>
+            <img src="images/eevee_profile_pic_square.png" alt="Profile Picture" width="50em" class="profile-picture">
+        </div>
+    </header>
+
+    <section class="main-body-search-form">
+        <img alt="Google Logo" class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <form>
+            <span class="material-icons">
+                search
+            </span>
+            <span class="material-icons">face</span>
+            <input type="search" class="search-box">
+            <span class="material-icons">mic</span>
+            <br>
+            <input type="button" value="Google Search" class="search-button">
+            <input type="button" value="I'm Feeling Lucky" class="feeling-lucky-button">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="https://www.theodinproject.com/">Advertising</a>
+            <a href="https://www.theodinproject.com/">Business</a>
+            <a href="https://www.theodinproject.com/">How Search Works</a>
+        </div>
+        <div class="footer-middle">
+            <img alt="Odin Project Logo" class="odin-project-logo" src="https://www.theodinproject.com/assets/odin-logo-bd86cf893a3de1f1daceabc1377f58669776616a91ab70c601fd5c16a4686468.svg">
+            <a href="https://www.theodinproject.com/">Odin Project</a>
+        </div>
+        <div class="footer-right">
+            <a href="https://www.theodinproject.com/">Privacy</a>
+            <a href="https://www.theodinproject.com/">Terms</a>
+            <a href="https://www.theodinproject.com/">Settings</a>
+        </div>
+    </footer>
+</body>
+
+</html>
