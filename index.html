@@ -6,39 +6,105 @@
     <title>Odin's Google Homepage</title>
     <link rel="stylesheet" href="css/form.css">
     <!--stylesheet link for using Google's material icons-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="css/header-section.css" rel="stylesheet">
+    <link href="css/footer-section.css" rel="stylesheet">
+    <link href="css/middle-section.css" rel="stylesheet">
 
     <style>
         body {
             background-color: lightblue;
+            font-family: sans-serif;
+            font-size: 14px;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 50px 1fr 50px;
         }
+
+        /* Header section */
         .header {
             background-color: lightgreen;
-            position: fixed;
-            top: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .header-left {
-            text-align: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: lightyellow;
+            width: 150px;
         }
         
         .header-right {
-            text-align: right;
-        }
-
-        .main-body-search-form {
-            text-align: center;
-        }
-
-        .footer {
-            background-color: lightgrey;
-            position: fixed;
-            bottom: 0;
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 250px;
         }
 
         .profile-picture {
             border-radius: 50%;
         }
+
+        /* CSS on the middle section with the logo and search form */
+        .middle-section {
+            background-color: lightskyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .search-form {
+            background-color: lightslategrey;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        /* Footer section */
+        .footer {
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left {
+            background-color: lightseagreen;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 350px;
+        }
+
+        .footer-middle {
+            background-color: lime;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+        }
+
+        .footer-right {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 200px;
+        }
+
     </style>
 </head>
 
@@ -56,18 +122,18 @@
         </div>
     </header>
 
-    <section class="main-body-search-form">
+    <section class="middle-section">
         <img alt="Google Logo" class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        <form>
-            <span class="material-icons">
-                search
-            </span>
-            <span class="material-icons">face</span>
+        <br>
+        <form class="search-form">
+            <span class="material-icons">search</span>
             <input type="search" class="search-box">
             <span class="material-icons">mic</span>
             <br>
-            <input type="button" value="Google Search" class="search-button">
-            <input type="button" value="I'm Feeling Lucky" class="feeling-lucky-button">
+            <div class="buttons">
+                <input type="button" value="Google Search" class="search-button">
+                <input type="button" value="I'm Feeling Lucky" class="feeling-lucky-button">
+            </div>
         </form>
     </section>
 
@@ -78,7 +144,7 @@
             <a href="https://www.theodinproject.com/">How Search Works</a>
         </div>
         <div class="footer-middle">
-            <img alt="Odin Project Logo" class="odin-project-logo" src="https://www.theodinproject.com/assets/odin-logo-bd86cf893a3de1f1daceabc1377f58669776616a91ab70c601fd5c16a4686468.svg">
+            <img alt="Odin Project Logo" class="odin-project-logo" width="15em" src="https://www.theodinproject.com/assets/odin-logo-bd86cf893a3de1f1daceabc1377f58669776616a91ab70c601fd5c16a4686468.svg">
             <a href="https://www.theodinproject.com/">Odin Project</a>
         </div>
         <div class="footer-right">
