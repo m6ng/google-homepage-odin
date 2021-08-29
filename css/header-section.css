@@ -1,0 +1,29 @@
+/* Header section */
+.header {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightyellow;
+    width: 150px;
+}
+
+.header-right {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+}
