@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--This is a page used for testing! Disregard this html file!-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Odin's Test Google Homepage</title>
+    
+    <style>
+        .container {
+            background-color: lightgray;
+            padding: 10px;
+            height: 500px;
+            display: grid;
+            grid-template-rows: 100px auto 100px;
+        }
+
+        .item-one {
+            background-color: lightblue;
+        }
+        .item-two {
+            background-color: orange;
+        }
+        .item-three {
+            background-color: lightgreen;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+                "one two three";
+        }
+
+        .subitem-one {
+            grid-area: one;
+        }
+        .subitem-two {
+            grid-area: two;
+        }
+        .subitem-three {
+            grid-area: three;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-rows: 100px auto 200px;
+            }
+            .item-three {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                "two two"
+                "one three";
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-rows: 100px auto 300px;
+            }
+            .item-three {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas:
+                "two"
+                "one"
+                "three";
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-one">Item One</div>
+        <div class="item-two">Item Two</div>
+        <div class="item-three">
+            <div class="subitem-one">subitem one</div>
+            <div class="subitem-two">subitem two</div>
+            <div class="subitem-three">subitem three</div>
+        </div>
+    </div>
+</body>
+
+</html>
