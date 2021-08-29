@@ -1,6 +1,5 @@
 /* Header section */
 .header {
-    background-color: lightgreen;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,12 +10,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: lightyellow;
     width: 150px;
 }
 
 .header-right {
-    background-color: lightsalmon;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -26,4 +23,5 @@
 
 .profile-picture {
     border-radius: 50%;
+    width: 35px;
 }

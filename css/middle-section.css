@@ -63,7 +63,7 @@ input[type="search"]::-webkit-search-results-decoration {
     text-align: center;
     padding: 10px 20px;
     margin: 0px 5px;
-    color: gray;
+    color: #434343;
 }
 
 .button:hover, button:focus, button:hover {
