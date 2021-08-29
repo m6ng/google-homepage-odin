@@ -1,36 +1,94 @@
 /* Footer section */
+/*
+Links that helped
+- https://stackoverflow.com/questions/32378953/keep-the-middle-item-centered-when-side-items-have-different-widths
+*/
+
 .footer {
     background-color: #F1F1F1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "footer-left footer-middle footer-right";
 }
 
 .footer-left {
+    grid-area: footer-left;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    width: 350px;
+    flex: 1;
+    min-width: -webkit-min-content;
 }
 
 .footer-middle {
+    grid-area: footer-middle;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    width: auto;
 }
 
 .footer-right {
+    grid-area: footer-right;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-    width: 200px;
+    flex: 1;
+    min-width: -webkit-min-content;
+}
+
+@media (max-width: 1200px) {
+    body {
+        grid-template-rows: 100px auto 100px;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "footer-middle footer-middle"
+            "footer-left footer-right";
+    }
+    .footer-left {
+        justify-content: center;
+        width: auto;
+    }
+    .footer-right {
+        justify-content: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-rows: 100px auto 150px;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "footer-middle"
+        "footer-left"
+        "footer-right";
+    }
 }
 
 .footer a {
     color: #696969;
+}
+
+.footer-left-links {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+}
+
+.footer-right-links {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
 }

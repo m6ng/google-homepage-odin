@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Odin's Google Homepage</title>
+    <link rel="icon" type="image/png" href="https://www.theodinproject.com/assets/odin-logo-bd86cf893a3de1f1daceabc1377f58669776616a91ab70c601fd5c16a4686468.svg">
 
     <!--STYLESHEETS-->
 
     <!--stylesheet link for using Google's material icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+
     <style>
         body {
             text-decoration: none;
@@ -19,7 +20,7 @@
             font-size: 14px;
             height: 100vh;
             display: grid;
-            grid-template-rows: 60px 1fr 40px;
+            grid-template-rows: 60px 1fr 50px;
         }
 
         a {
@@ -70,18 +71,22 @@
 
     <footer class="footer">
         <div class="footer-left">
-            <a href="#">Advertising</a>
-            <a href="#">Business</a>
-            <a href="#">How Search Works</a>
+            <div class="footer-left-links">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search Works</a>
+            </div>
         </div>
         <div class="footer-middle">
             <img alt="Odin Project Logo" class="odin-project-logo" width="15em" src="https://www.theodinproject.com/assets/odin-logo-bd86cf893a3de1f1daceabc1377f58669776616a91ab70c601fd5c16a4686468.svg">
             <a href="https://www.theodinproject.com/">Odin Project</a>
         </div>
         <div class="footer-right">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Settings</a>
+            <div class="footer-right-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
         </div>
     </footer>
 </body>
