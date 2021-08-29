@@ -11,7 +11,9 @@
 }
 
 .search-form {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .search-bar {
@@ -37,7 +39,6 @@ https://stackoverflow.com/questions/56994693/how-avoid-form-elements-move-when-g
 }
 
 .search-box, .search-box:focus, .search-box:active {
-    background-color: antiquewhite;
     border: none;
     outline: none;
     width: 400px;
@@ -62,8 +63,10 @@ input[type="search"]::-webkit-search-results-decoration {
     text-align: center;
     padding: 10px 20px;
     margin: 0px 5px;
+    color: gray;
 }
 
 .button:hover, button:focus, button:hover {
     box-shadow: 0 0 0 1px lightgray;
+    color: black;
 }
